@@ -15,7 +15,7 @@ const GlobalStyles = createGlobalStyle`
 background-image: linear-gradient(315deg, #bf3a30 0%, #864ba2 74%);
 @media (min-width: 768px) {
 
-    height: 118vh;
+    /* height: 118vh; */
 }
 
         color: white;

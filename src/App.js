@@ -4,6 +4,7 @@ import { Carousel } from 'react-carousel-minimal'
 
 import blood from './assets/bg.png'
 
+import carvana from './assets/projects/carvana.png'
 import xbox from './assets/projects/xbox.png'
 import xboxMobile from './assets/projects/xbox-mobile.png'
 import hbo from './assets/projects/hbo.png'
@@ -38,10 +39,11 @@ const StyledApp = styled.div`
 		grid-template-rows: 100px 400px auto auto;
 	}
 	@media (min-width: 1280px) {
-    height: 93.5vh;
+    height: 98vh;
     border-radius: 13px;
 		box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-    margin-top: 1.5rem;
+    /* margin-top: 1.5rem; */
+	margin: auto;
 	}
 	#gore {
 		position: absolute;
@@ -219,7 +221,7 @@ const StyledApp = styled.div`
 	#technologies {
     background-color: transparent;
     @media (min-width: 640px) {
-      margin-top: 4rem;
+      margin-top: 6rem;
     }
     padding: 0 1rem;
     p {
@@ -262,19 +264,12 @@ const StyledApp = styled.div`
       }
     }
   }
-	footer {
-		font-size: 80%;
-		width: 100%;
-		display: flex;
-		justify-content: center;
-		padding: 2rem 0;
-		margin-top: auto;
-		background-color: #C8221B;
-	}
+
 `
 
 const App = () => {
 	const projectsDesktop = [
+		{image: carvana},
 		{ image: xbox },
 		{ image: hbo },
 		{ image: wb },
@@ -316,7 +311,7 @@ const App = () => {
 				/>
 			</div>
 
-			<div id="technologies">
+			{/* <div id="technologies">
 				<p>Building pleasant interfaces with the following technologies: </p>
 				<div id="tech">
 					{technologies.map((tech, i) => (
@@ -325,7 +320,7 @@ const App = () => {
 						</div>
 					))}
 				</div>
-			</div>
+			</div> */}
 		</StyledApp>
 	)
 }
