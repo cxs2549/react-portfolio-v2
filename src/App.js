@@ -2,6 +2,7 @@ import GlobalStyles from './globalStyles'
 import styled from 'styled-components'
 import Carousel from './components/Carousel/Carousel'
 
+import marriott from './assets/projects/marriott.png'
 import arbys from './assets/projects/arbys.png'
 import deltaco from './assets/projects/del-taco.png'
 import carvana from './assets/projects/carvana.png'
@@ -9,9 +10,6 @@ import xbox from './assets/projects/xbox.png'
 import xboxMobile from './assets/projects/xbox-mobile.png'
 import hbo from './assets/projects/hbo.png'
 import hboMobile from './assets/projects/hbo-mobile.png'
-import wb from './assets/projects/wb.png'
-import wbMobile from './assets/projects/wb-mobile.png'
-import baja from './assets/projects/baja-fresh.png'
 
 import react from './assets/skills/react.png'
 import vue from './assets/skills/vue.png'
@@ -179,15 +177,14 @@ const StyledApp = styled.div`
 
 const App = () => {
 	const projectsDesktop = [
+		{ image: marriott, url: 'https://cxs2549.github.io/react-marriott/' },
 		{ image: arbys, url: 'https://cxs2549.github.io/react-arbys/' },
 		{ image: deltaco, url: 'https://cxs2549.github.io/react-del-taco/' },
 		{ image: carvana, url: 'https://cxs2549.github.io/react-carvana/' },
 		{ image: xbox, url: 'https://cxs2549.github.io/react-xbox/' },
 		{ image: hbo, url: 'https://cxs2549.github.io/react-hbo-max-v2/' },
-		{ image: wb, url: 'https://cxs2549.github.io/react-wb/' },
-		// { image: baja, url: 'https://cxs2549.github.io/react-baja-fresh/' }
 	]
-	const projectsMobile = [ { image: xboxMobile }, { image: hboMobile }, { image: wbMobile } ]
+
 	const technologies = [ vue, react, sass, tailwind ]
 
 	return (
