@@ -2,14 +2,14 @@ import GlobalStyles from './globalStyles'
 import styled from 'styled-components'
 import Carousel from './components/Carousel/Carousel'
 
+import motel6 from './assets/projects/motel6.png'
 import marriott from './assets/projects/marriott.png'
 import arbys from './assets/projects/arbys.png'
 import deltaco from './assets/projects/del-taco.png'
 import carvana from './assets/projects/carvana.png'
 import xbox from './assets/projects/xbox.png'
-import xboxMobile from './assets/projects/xbox-mobile.png'
 import hbo from './assets/projects/hbo.png'
-import hboMobile from './assets/projects/hbo-mobile.png'
+import wb from './assets/projects/wb.png'
 
 import react from './assets/skills/react.png'
 import vue from './assets/skills/vue.png'
@@ -18,7 +18,7 @@ import tailwind from './assets/skills/tailwind.png'
 import Header from './components/Header/Header'
 
 const StyledApp = styled.div`
-	height: 100vh;
+	/* height: 100vh; */
 	display: flex;
 	flex-flow: column;
 	max-width: 1200px;
@@ -27,13 +27,13 @@ const StyledApp = styled.div`
 	padding: 1.5rem 0;
 	padding-bottom: 0;
 
-	background-color: #7f5a83;
-	background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+	/* background-color: #7f5a83;
+	background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%); */
 
 	position: relative;
 	z-index: 0;
 	border: none;
-	overflow: hidden;
+	/* overflow: hidden; */
 	@media (min-width: 640px) {
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 100px 400px auto auto;
@@ -42,9 +42,9 @@ const StyledApp = styled.div`
 		gap: .5rem;
 	}
 	@media (min-width: 1280px) {
-		height: 92vh;
+		/* height: 92vh; */
 		border-radius: 13px;
-		box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+		/* box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2); */
 		margin-top: 2rem;
 	}
 
@@ -72,9 +72,13 @@ const StyledApp = styled.div`
 		}
 		#thumbnail-div {
 			display: flex;
+			/* margin-left: 16px; */
+			grid-template-columns: repeat(4, 1fr);
+			gap: 8px;
 			justify-content: center;
-			max-width: 100vw;
-			/* margin-bottom: 1rem; */
+			flex-wrap: wrap;
+			/* border: 2px solid white; */
+			padding: 0 1rem;
 			img {
 				border-radius: 3px;
 				cursor: pointer;
@@ -177,12 +181,14 @@ const StyledApp = styled.div`
 
 const App = () => {
 	const projectsDesktop = [
+		{ image: motel6, url: 'https://cxs2549.github.io/react-motel6/' },
 		{ image: marriott, url: 'https://cxs2549.github.io/react-marriott/' },
 		{ image: arbys, url: 'https://cxs2549.github.io/react-arbys/' },
 		{ image: deltaco, url: 'https://cxs2549.github.io/react-del-taco/' },
 		{ image: carvana, url: 'https://cxs2549.github.io/react-carvana/' },
 		{ image: xbox, url: 'https://cxs2549.github.io/react-xbox/' },
 		{ image: hbo, url: 'https://cxs2549.github.io/react-hbo-max-v2/' },
+		{ image: wb, url: 'https://cxs2549.github.io/react-wb/' },
 	]
 
 	const technologies = [ vue, react, sass, tailwind ]

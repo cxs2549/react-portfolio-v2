@@ -5,6 +5,7 @@ const StyledHeader = styled.div`
 	align-items: center;
 	justify-content: center;
 	margin-bottom: 1rem;
+	/* border: 2px solid white; */
 	h2 {
 	}
 	h2 {
