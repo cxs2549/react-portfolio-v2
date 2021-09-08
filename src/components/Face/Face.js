@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 import photo from '../../assets/profile.jpg'
 const StyledFace = styled.div`
-padding: 0 1rem;
+/* padding: 0 1rem; */
+/* border: 2px solid white; */
   img {
     border-radius: 99999px;
     max-width: 70px;

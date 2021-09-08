@@ -16,6 +16,7 @@ const GlobalStyles = createGlobalStyle`
         display: flex;
         flex-flow: column;
         align-items: center;
+        /* padding: 1rem; */
         /* justify-content: center; */
 
         height: 100vh;

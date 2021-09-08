@@ -34,8 +34,9 @@ const StyledApp = styled.div`
 	/* overflow: hidden; */
 	/* background-color: rgba(0,0,0,.4); */
 	border-radius: 13px;
+	margin-top: 2rem;
 	@media (min-width: 640px) {
-
+		margin-top: 0;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 100px 400px auto auto;
 	}
@@ -45,8 +46,9 @@ const StyledApp = styled.div`
 	@media (min-width: 1280px) {
 		/* height: 92vh; */
 		border-radius: 13px;
+		display: none;
 		/* box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2); */
-		margin-top: 2rem;
+		/* margin-top: 2rem; */
 	}
 
 	#slides {
@@ -111,9 +113,6 @@ const StyledApp = styled.div`
 			}
 		}
 	}
-
-	
-	
 `
 
 const App = () => {
@@ -125,14 +124,13 @@ const App = () => {
 		{ image: carvana, url: 'https://cxs2549.github.io/react-carvana/' },
 		{ image: xbox, url: 'https://cxs2549.github.io/react-xbox/' },
 		{ image: hbo, url: 'https://cxs2549.github.io/react-hbo-max-v2/' },
-		{ image: wb, url: 'https://cxs2549.github.io/react-wb/' },
+		{ image: wb, url: 'https://cxs2549.github.io/react-wb/' }
 	]
 
 	const technologies = [ vue, react, sass, tailwind ]
 
 	return (
 		<StyledApp>
-
 			<div id="slides">
 				<Carousel
 					data={projectsDesktop}
@@ -157,7 +155,6 @@ const App = () => {
 					}}
 				/>
 			</div>
-
 		</StyledApp>
 	)
 }
