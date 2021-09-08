@@ -2,15 +2,20 @@ import styled from 'styled-components'
 
 const StyledHeader = styled.div`
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	flex-flow: column;
 	margin-bottom: 1rem;
-	/* border: 2px solid white; */
+	/* background-color: rgba(0,0,0,.4); */
+	border-radius: 13px;
+	margin: 1rem;
+	justify-content: center;
+	padding: 1rem;
+	@media (min-width: 768px) {
+
+	}
 	h2 {
 	}
 	h2 {
 		font-size: 220%;
-		padding: 0 1rem;
 		line-height: 1;
 		text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
 		@media (min-width: 640px) {
@@ -27,7 +32,8 @@ const StyledHeader = styled.div`
 const Header = () => {
 	return (
 		<StyledHeader>
-			<h2>phobia Webworks</h2>
+			<h2> cliff sanchez</h2>
+			<h3>los angeles, ca</h3>
 		</StyledHeader>
 	)
 }
