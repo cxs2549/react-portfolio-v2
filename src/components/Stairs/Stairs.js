@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import showtime from '../../assets/projects/showtime.png'
 import marriott from '../../assets/projects/marriott.png'
 import motel6 from '../../assets/projects/motel6.png'
 import arbys from '../../assets/projects/arbys.png'
@@ -24,6 +25,7 @@ const StyledStairs = styled.div`
 `
 const Stairs = () => {
 	const projectsDesktop = [
+		{ image: showtime, url: 'https://cxs2549.github.io/react-showtime/' },
 		{ image: arbys, url: 'https://cxs2549.github.io/react-arbys/' },
 		{ image: motel6, url: 'https://cxs2549.github.io/react-motel6/' },
 		{ image: marriott, url: 'https://cxs2549.github.io/react-marriott/' },
@@ -37,7 +39,7 @@ const Stairs = () => {
 		<StyledStairs className="hidden xl:grid grid-cols-2  max-w-6xl">
 			{projectsDesktop.map((proj, i) => (
 				<div id={`project-${i}`} key={i}>
-					<a href={proj.url} target="_blank">
+					<a href={proj.url} target="_blank" rel="noreferrer">
 						<img src={proj.image} alt="" />
 					</a>
 				</div>

@@ -2,6 +2,7 @@ import GlobalStyles from '../../globalStyles'
 import styled from 'styled-components'
 import Carousel from '../Carousel/Carousel'
 
+import showtime from '../../assets/projects/showtime.png'
 import motel6 from '../../assets/projects/motel6.png'
 import marriott from '../../assets/projects/marriott.png'
 import arbys from '../../assets/projects/arbys.png'
@@ -22,17 +23,11 @@ const StyledApp = styled.div`
 	flex-flow: column;
 	max-width: 1200px;
 	margin: 0 auto;
-	/* gap: 1rem; */
-	/* padding: 1.5rem; */
 	height: 100%;
-
-	/* margin: 1rem; */
 	border-radius: 13px;
 	position: relative;
 	z-index: 0;
 	border: none;
-	/* overflow: hidden; */
-	/* background-color: rgba(0,0,0,.4); */
 	border-radius: 13px;
 	margin-top: 2rem;
 	@media (min-width: 640px) {
@@ -44,11 +39,8 @@ const StyledApp = styled.div`
 		gap: .5rem;
 	}
 	@media (min-width: 1280px) {
-		/* height: 92vh; */
 		border-radius: 13px;
 		display: none;
-		/* box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2); */
-		/* margin-top: 2rem; */
 	}
 
 	#slides {
@@ -68,19 +60,16 @@ const StyledApp = styled.div`
 		}
 		.carousel-image {
 			object-position: top;
-			/* border-radius: 99px; */
 			border-radius: 3px;
 			height: 100%;
 			max-width: 900px !important;
 		}
 		#thumbnail-div {
 			display: flex;
-			/* margin-left: 16px; */
 			grid-template-columns: repeat(4, 1fr);
 			gap: 8px;
 			justify-content: center;
 			flex-wrap: wrap;
-			/* border: 2px solid white; */
 			padding: 0 1rem;
 			img {
 				border-radius: 3px;
@@ -117,6 +106,7 @@ const StyledApp = styled.div`
 
 const App = () => {
 	const projectsDesktop = [
+		{ image: showtime, url: 'https://cxs2549.github.io/react-showtime/' },
 		{ image: motel6, url: 'https://cxs2549.github.io/react-motel6/' },
 		{ image: marriott, url: 'https://cxs2549.github.io/react-marriott/' },
 		{ image: arbys, url: 'https://cxs2549.github.io/react-arbys/' },

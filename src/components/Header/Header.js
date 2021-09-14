@@ -39,7 +39,7 @@ const StyledHeader = styled.div`
 const Header = () => {
 	return (
 		<StyledHeader>
-			<h2> cliff sanchez</h2>
+			<h2 className="capitalize"> cliff sanchez</h2>
 			<h3 className="md:text-lg xl:text-xl font-medium ">los angeles, ca</h3>
 		</StyledHeader>
 	)
