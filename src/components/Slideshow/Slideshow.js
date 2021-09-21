@@ -2,6 +2,7 @@ import GlobalStyles from '../../globalStyles'
 import styled from 'styled-components'
 import Carousel from '../Carousel/Carousel'
 
+import tubi from '../../assets/projects/tubi.png'
 import showtime from '../../assets/projects/showtime.png'
 import motel6 from '../../assets/projects/motel6.png'
 import marriott from '../../assets/projects/marriott.png'
@@ -40,7 +41,7 @@ const StyledApp = styled.div`
 	}
 	@media (min-width: 1280px) {
 		border-radius: 13px;
-		display: none;
+		/* display: none; */
 	}
 
 	#slides {
@@ -106,6 +107,7 @@ const StyledApp = styled.div`
 
 const App = () => {
 	const projectsDesktop = [
+		{ image: tubi, url: 'https://cxs2549.github.io/react-tubi/' },
 		{ image: showtime, url: 'https://cxs2549.github.io/react-showtime/' },
 		{ image: motel6, url: 'https://cxs2549.github.io/react-motel6/' },
 		{ image: marriott, url: 'https://cxs2549.github.io/react-marriott/' },
@@ -117,7 +119,7 @@ const App = () => {
 		{ image: wb, url: 'https://cxs2549.github.io/react-wb/' }
 	]
 
-	const technologies = [ vue, react, sass, tailwind ]
+	// const technologies = [ vue, react, sass, tailwind ]
 
 	return (
 		<StyledApp>

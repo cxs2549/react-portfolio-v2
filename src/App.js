@@ -37,7 +37,7 @@ const App = () => {
 				</div>
 			</div>
 			<Slideshow />
-			<Stairs />
+			{/* <Stairs /> */}
 		</StyledApp>
 	)
 }
