@@ -1,10 +1,10 @@
-import GlobalStyles from '../../globalStyles'
 import styled from 'styled-components'
 import Carousel from '../Carousel/Carousel'
 
+import coke from '../../assets/projects/coke.png'
 import tubi from '../../assets/projects/tubi.png'
 import showtime from '../../assets/projects/showtime.png'
-import motel6 from '../../assets/projects/motel6.png'
+// import motel6 from '../../assets/projects/motel6.png'
 import marriott from '../../assets/projects/marriott.png'
 import arbys from '../../assets/projects/arbys.png'
 import deltaco from '../../assets/projects/del-taco.png'
@@ -12,12 +12,6 @@ import carvana from '../../assets/projects/carvana.png'
 import xbox from '../../assets/projects/xbox.png'
 import hbo from '../../assets/projects/hbo.png'
 import wb from '../../assets/projects/wb.png'
-
-import react from '../../assets/skills/react.png'
-import vue from '../../assets/skills/vue.png'
-import sass from '../../assets/skills/sass.png'
-import tailwind from '../../assets/skills/tailwind.png'
-import Header from '../Header/Header'
 
 const StyledApp = styled.div`
 	display: flex;
@@ -107,9 +101,10 @@ const StyledApp = styled.div`
 
 const App = () => {
 	const projectsDesktop = [
+		{ image: coke, url: 'https://cxs2549.github.io/react-coke/' },
 		{ image: tubi, url: 'https://cxs2549.github.io/react-tubi/' },
 		{ image: showtime, url: 'https://cxs2549.github.io/react-showtime/' },
-		{ image: motel6, url: 'https://cxs2549.github.io/react-motel6/' },
+		// { image: motel6, url: 'https://cxs2549.github.io/react-motel6/' },
 		{ image: marriott, url: 'https://cxs2549.github.io/react-marriott/' },
 		{ image: arbys, url: 'https://cxs2549.github.io/react-arbys/' },
 		{ image: deltaco, url: 'https://cxs2549.github.io/react-del-taco/' },

@@ -5,7 +5,7 @@ const StyledFace = styled.div`
 /* border: 2px solid white; */
   img {
     border-radius: 99999px;
-    max-width: 70px;
+    max-width: 60px;
 
   }
 `
